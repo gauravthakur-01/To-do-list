@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+}
+
+.nav-bar {
+    padding: 10px 30px;
+    height: 16vh;
+    width: 100vw;
+    background-color: teal;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-container {
+    /* padding: 10px; */
+    height: 100%;
+    width: 25rem;
+    border-radius: 20px;
+    background-color: darkseagreen;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter {
+    cursor: grab;
+    padding: 10px;
+    height: 100%;
+    width: 12vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: #1b1818; */
+    border-radius: 20px;
+}
+
+.filter:hover {
+    background-color: rgb(96, 96, 97);
+    border-radius: 20px;
+}
+
+.filter div {
+    /* font-size: 20px; */
+    height: 90%;
+    width: 70px;
+    border-radius: 20px;
+}
+
+/* .orange-color-filter {
+    font-size: 20px;
+    height: 60px;
+    width: 70px;
+    border-radius: 20px;
+    background-color: orange;
+}
+
+.pink-color-filter {
+    text-align: center;
+    font-size: 20px;
+    height: 60px;
+    width: 70px;
+    border-radius: 20px;
+    background-color: pink;
+}
+
+.aqua-color-filter {
+    text-align: center;
+    font-size: 20px;
+    height: 60px;
+    width: 70px;
+    border-radius: 20px;
+    background-color: rgb(34, 244, 244);
+} */
+
+.action-button {
+    /* padding: 10px; */
+    text-align: center;
+    height: 100%;
+    width: 15rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #fff;
+
+}
+
+.butons {
+    height: 90%;
+    width: 70px;
+    border-radius: 20px;
+    padding: 10px;
+    /* background-color: #38000a; */
+}
+
+.butons:hover {
+    border-radius: 20px;
+    /* border: none; */
+    background-color: rgb(96, 96, 97);
+}
+
+.blue-add {
+    /* padding: 20px; */
+    color: #d2b48c;
+    font-size: 9vh;
+}
+
+.red-sub {
+    color: gold;
+    font-size: 9vh;
+}
+
+.lower-body {
+    overflow: auto;
+    flex: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    /* justify-content: center; */
+    gap: 10px;
+    height: 100%;
+    width: 100vw;
+}
+
+.modal-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 320px;
+    width: 460px;
+    border-radius: 20px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 5px 20px rgb(62 58 58);
+}
+
+.modal-screen {
+    padding: 10px;
+    font-size: 22px;
+    border-radius: 20px;
+    height: 20rem;
+    width: 18rem;
+    /* background-color: rgb(205, 230, 230) ; */
+    overlay: body;
+    background-color: #FFD54F;
+    overflow-y: hidden;
+}
+
+.modal-filters-container {
+    padding: 10px 50px;
+    border-radius: 20px;
+    height: 20rem;
+    width: 11rem;
+    /* background-color: #6b7070f5;  */
+    background-color: #DFFFE0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.modal-filter {
+    border-radius: 20px;
+    height: 50px;
+    width: 70px;
+    opacity: 0.5;
+    cursor: grab;
+}
+
+.modal-filter:hover {
+    opacity: 1;
+}
+
+.active-modal-filter {
+    border: 4px solid rgb(157, 149, 149);
+    opacity: 1;
+}
+
+.ticket-container {
+
+    overflow: hidden;
+    resize: vertical;
+    padding: 10px 20px;
+    height: 50%;
+    min-height: 50%;
+    width: 25%;
+    border-radius: 20px;
+    background-color: yellow;
+    background-color: black;
+    position: relative;
+    font-size: 22px;
+}
+
+
+.close-btn {
+    /* width: 10%; */
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 5vh;
+    background-color: red;
+    color: aliceblue;
+    border: 1px solid aliceblue;
+    border-radius: 0.6rem;
+    opacity: 0.3;
+}
+
+.opacity {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.ticket-info {
+    /* position: relative; */
+    /* overflow: o; */
+    padding: 15px;
+    height: 20%;
+    width: 75%;
+    border-radius: 20px;
+    background-color: #292727e2;
+    color: beige;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.ticket-color {
+    background-color: red;
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+}
+
+.ticket-content {
+    color: yellow;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    overflow: hidden;
+    /* height: 80%; */
+    width: 100%;
+}
+
+
+
+.active-state {
+    height: 90%;
+    width: 70px;
+    /* padding: 10px; */
+    background-color: rgb(96, 96, 97);
+    border-radius: 20px;
+}
+
+
+.ticket-delete {
+    font-size: 18px;
+    height: 10px;
+    width: 10px;
+    background-color: blue;
+}
+
+.pencil {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    color: red;
+}
+
+.red {
+    background-color: red;
+}
+
+
+@media screen and (max-width:930px) {
+    .ticket-container {
+        width: 30%;
+
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .ticket-container {
+        width: 50%;
+    }
+
+    .ticket-info {
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width:676px) {
+
+    .nav-bar {
+        gap: 20px;
+    }
+    .modal-container {
+        width: 68%;
+    }
+
+    .ticket-container{
+        width: 48%
+    }
+}
+
+@media screen and (max-width:580px) {
+
+    /* .nav-bar {
+        gap: 20px;
+    } */
+    .modal-container {
+        width: 70%;
+    }
+
+    .ticket-container{
+        width: 48%
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    .nav-bar {
+        gap: 20px;
+    }
+
+
+
+    .modal-container {
+        width: 92%;
+    }
+
+    .ticket-container {
+        width: 80%;
+
+    }
+
+    .ticket-info {
+        width: 70%;
+        display: block;
+    }
+
+    .ticket-color {
+        height: 30%;
+        width: 100%;
+    }
+}
